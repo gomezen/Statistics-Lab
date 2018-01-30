@@ -1,0 +1,14 @@
+public class Stats {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double[] ints = {1,1,2,3};
+		SatisticalCalculator a = new SatisticalCalculator();
+	 System.out.println("Your average is: "+ a.average(ints));	
+	 a.stdDev(ints);
+	 a.mode(ints);
+	
+	}
+
+}
