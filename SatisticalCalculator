@@ -1,0 +1,63 @@
+public class SatisticalCalculator {
+	private double avg, sum, deviation, devSum, modes, counter;
+	private String gmode = "";
+
+	public  SatisticalCalculator() {
+	
+	}
+	
+public double average(double [] list)
+{
+	
+	for (int i = 0;i < list.length;i++)
+	{
+		sum += list[i];
+	}
+	avg = sum/list.length;
+	return avg;
+}
+public void stdDev(double [] list)
+{	
+	for (int i = 0;i < list.length;i++)
+	{	
+		
+		
+		devSum+= Math.pow((list[i]-avg), 2);
+	}
+	deviation = devSum/(list.length-1); 
+	System.out.println("Your standard deviation is: " + Math.sqrt(deviation));
+}
+public void mode(double[] list)
+{
+double [] moder = new double[101];
+for (int i = 0; i < moder.length; i++)//declares moder array 
+{
+	moder[i] = 0;
+}
+for (int i = 0; i < list.length; i++)//makes moder array values increase every time the number it represents is in the available array
+{
+	counter = list[i];
+	moder[(int)counter]++;
+}
+ modes = 0;
+for (int i = 0; i < moder.length;i++)//find mode
+{
+	if(moder[i] > moder[(int)modes])
+	{
+		modes = i;
+	}
+
+}
+
+for (int i = 0; i < moder.length;i++)//find mode
+{
+	if (moder[i] == moder[(int)modes])
+	{
+		
+		
+		
+}
+}
+System.out.println("Your mode(s) is/are: "   + gmode.substring(0,gmode.length()-2)+ ".");
+}
+}
