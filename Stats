@@ -3,7 +3,7 @@ public class Stats {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		double[] ints = {1,1,2,3};
+		double[] ints = {53, 78, 82, 85, 87, 85, 90, 93, 99, 100};
 		SatisticalCalculator a = new SatisticalCalculator();
 	 System.out.println("Your average is: "+ a.average(ints));	
 	 a.stdDev(ints);
