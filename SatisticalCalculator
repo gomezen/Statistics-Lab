@@ -54,7 +54,7 @@ for (int i = 0; i < moder.length;i++)//find mode
 	if (moder[i] == moder[(int)modes])
 	{
 		
-		
+	gmode = i +" ,";	
 		
 }
 }
